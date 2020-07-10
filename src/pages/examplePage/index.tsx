@@ -6,7 +6,7 @@ import { ExampleComponent } from '../../components';
 const ExamplePage: React.FC = () => {
   return (
     <ExampleContainer>
-      <ExampleComponent>template-reactjs-typescript/</ExampleComponent>
+      <ExampleComponent>clone-twitter</ExampleComponent>
     </ExampleContainer>
   );
 };

@@ -1,10 +1,8 @@
-# template | REACTJS with TYPESCRIPT
-
-##### react-router-dom, styled-components and more...
+# clone | TWITTER
 
 ## About This Project
 
-This project contains the basic structure used by [CODERAMOS](https://github.com/coderamos) to start projects in React with TypeScript.
+Just a clone of the Twitter application with TypeScript.
 
 ## Avaliable Scripts
 
