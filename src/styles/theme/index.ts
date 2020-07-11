@@ -22,6 +22,7 @@ export const fontStyles = {
 
 export const grid = {
   breakpoints: {
+    xs: 321,
     sm: 501,
     md: 1001,
     lg: 1281,
@@ -29,6 +30,7 @@ export const grid = {
 };
 
 export const mediaQueries = {
+  xs: `(min-width: ${grid.breakpoints.xs}px)`,
   sm: `(min-width: ${grid.breakpoints.sm}px)`,
   md: `(min-width: ${grid.breakpoints.md}px)`,
   lg: `(min-width: ${grid.breakpoints.lg}px)`,

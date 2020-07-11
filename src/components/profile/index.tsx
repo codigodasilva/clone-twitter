@@ -5,6 +5,7 @@ import {
   BannerWrapper,
   Avatar,
   ProfileData,
+  ButtonEdit,
   ProfileName,
   ProfileUsername,
   ProfileDescription,
@@ -26,7 +27,7 @@ const Profile: React.FC = () => {
       </BannerWrapper>
 
       <ProfileData>
-        {/* <ButtonEdit outlined>edit profile</ButtonEdit> */}
+        <ButtonEdit outlined>edit profile</ButtonEdit>
         <ProfileName>Diego Ramos</ProfileName>
         <ProfileUsername>@diegocoderamos</ProfileUsername>
         <ProfileDescription>

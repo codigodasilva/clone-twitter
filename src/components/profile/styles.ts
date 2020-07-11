@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { LocationOn, Cake, coderamos } from '../../assets';
+import Button from '../button';
 
 const iconStyle = css`
   cursor: pointer;
@@ -123,4 +124,18 @@ export const Following = styled.span`
 export const Followers = styled.span`
   color: ${(props) => props.theme.colors.gray};
   font-size: 16px;
+`;
+
+export const ButtonEdit = styled(Button)`
+  font-size: 12px;
+  padding: 4px 16px;
+  position: absolute;
+  right: 8px;
+  top: 2vw;
+
+  @media ${(props) => props.theme.mediaQueries.xs} {
+    font-size: 16px;
+    padding: 10px 20px;
+    top: 10px;
+  }
 `;
