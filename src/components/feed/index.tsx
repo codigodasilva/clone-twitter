@@ -1,12 +1,14 @@
 import React from 'react';
 
+import Profile from '../profile';
+
 import {
   FeedContainer,
   ContentHeader,
   ButtonWrapper,
   BackButtonIcon,
   ProfileInfo,
-  UserName,
+  ProfileName,
   TwitsAmount,
   BottomMenu,
   HomeIcon,
@@ -23,12 +25,12 @@ const Feed: React.FC = () => {
           <BackButtonIcon></BackButtonIcon>
         </ButtonWrapper>
         <ProfileInfo>
-          <UserName>Diego Ramos</UserName>
+          <ProfileName>Diego Ramos</ProfileName>
           <TwitsAmount>127 tweets</TwitsAmount>
         </ProfileInfo>
       </ContentHeader>
 
-      {/* <ProfilePage></ProfilePage> */}
+      <Profile />
 
       <BottomMenu>
         <HomeIcon className="active" />

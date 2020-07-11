@@ -58,7 +58,7 @@ export const ProfileInfo = styled.div`
   margin-left: 16px;
 `;
 
-export const UserName = styled.strong`
+export const ProfileName = styled.strong`
   font-size: 19px;
 `;
 
