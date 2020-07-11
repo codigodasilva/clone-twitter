@@ -1,4 +1,4 @@
 // import ExamplePage from './examplePage';
-import ExamplePage from './examplePage';
+import Home from './home';
 
-export { ExamplePage };
+export { Home };

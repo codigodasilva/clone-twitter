@@ -1,3 +1,4 @@
-import ExampleComponent from './exampleComponent';
+import Layout from './layout';
+import Feed from './feed';
 
-export { ExampleComponent };
+export { Layout, Feed };
