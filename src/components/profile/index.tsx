@@ -1,5 +1,7 @@
 import React from 'react';
 
+import FeedProfile from '../feedProfile';
+
 import {
   ProfileContainer,
   BannerWrapper,
@@ -58,6 +60,8 @@ const Profile: React.FC = () => {
           </Followers>
         </FollowageWrapper>
       </ProfileData>
+
+      <FeedProfile />
     </ProfileContainer>
   );
 };
