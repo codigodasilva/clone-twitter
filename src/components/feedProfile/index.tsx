@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Icon from '../icon';
-
 import Tweet from '../tweet';
 
 import {
