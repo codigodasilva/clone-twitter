@@ -5,7 +5,7 @@ import { ReactComponent as arrowLeft } from '../../assets/twitterIcons/arrowLeft
 import { ReactComponent as balloon } from '../../assets/twitterIcons/balloon.svg';
 import { ReactComponent as bell } from '../../assets/twitterIcons/bell.svg';
 import { ReactComponent as calendar } from '../../assets/twitterIcons/calendar.svg';
-import { ReactComponent as comment } from '../../assets/twitterIcons/comment.svg';
+import { ReactComponent as chat } from '../../assets/twitterIcons/chat.svg';
 import { ReactComponent as home } from '../../assets/twitterIcons/home.svg';
 import { ReactComponent as like } from '../../assets/twitterIcons/like.svg';
 import { ReactComponent as location } from '../../assets/twitterIcons/location.svg';
@@ -28,7 +28,7 @@ const dictionary = {
   balloon,
   bell,
   calendar,
-  comment,
+  chat,
   home,
   like,
   location,
