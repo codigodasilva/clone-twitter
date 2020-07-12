@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components';
-import { ArrowLeft, Home, Search, Notifications, Email } from '../../assets';
+
+import Icon from '../icon';
 
 const iconStyle = css`
   cursor: pointer;
   fill: ${(props) => props.theme.colors.gray};
-  height: 30px;
+  height: 24px;
   transition: fill 0.2s;
-  width: 30px;
+  width: 24px;
 
   &:hover,
   &.active {
@@ -46,7 +47,9 @@ export const ButtonWrapper = styled.button`
   }
 `;
 
-export const BackButtonIcon = styled(ArrowLeft)`
+export const BackButtonIcon = styled(Icon).attrs({
+  name: 'arrowLeft',
+})`
   fill: ${(props) => props.theme.colors.twitter};
   height: 24px;
   width: 24px;
@@ -83,18 +86,26 @@ export const BottomMenu = styled.nav`
   }
 `;
 
-export const HomeIcon = styled(Home)`
+export const HomeIcon = styled(Icon).attrs({
+  name: 'home',
+})`
   ${iconStyle}
 `;
 
-export const SearchIcon = styled(Search)`
+export const SearchIcon = styled(Icon).attrs({
+  name: 'search',
+})`
   ${iconStyle}
 `;
 
-export const BellIcon = styled(Notifications)`
+export const BellIcon = styled(Icon).attrs({
+  name: 'bell',
+})`
   ${iconStyle}
 `;
 
-export const EmailIcon = styled(Email)`
+export const EmailIcon = styled(Icon).attrs({
+  name: 'mail',
+})`
   ${iconStyle}
 `;

@@ -15,7 +15,8 @@ import {
   InfoList,
   InfoItem,
   LocationIcon,
-  CakeIcon,
+  BalloonIcon,
+  CalendarIcon,
   FollowageWrapper,
   Following,
   Followers,
@@ -46,8 +47,12 @@ const Profile: React.FC = () => {
           </InfoItem>
 
           <InfoItem>
-            <CakeIcon />
+            <BalloonIcon />
             born october 8, 1990
+          </InfoItem>
+          <InfoItem>
+            <CalendarIcon />
+            joined september 2016
           </InfoItem>
         </InfoList>
 

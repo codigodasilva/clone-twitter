@@ -22,7 +22,7 @@ const Feed: React.FC = () => {
     <FeedContainer>
       <ContentHeader>
         <ButtonWrapper>
-          <BackButtonIcon></BackButtonIcon>
+          <BackButtonIcon />
         </ButtonWrapper>
         <ProfileInfo>
           <ProfileName>Diego Ramos</ProfileName>

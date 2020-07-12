@@ -1,15 +1,16 @@
 import styled, { css } from 'styled-components';
-import { LocationOn, Cake, coderamos } from '../../assets';
+import { coderamos } from '../../assets';
+import Icon from '../icon';
 
 import Button from '../button';
 
 const iconStyle = css`
   cursor: pointer;
   fill: ${(props) => props.theme.colors.gray};
-  height: 20px;
+  height: 18px;
   margin-right: 4px;
   transition: fill 0.2s;
-  width: 20px;
+  width: 18px;
 
   &:hover,
   &.active {
@@ -85,9 +86,14 @@ export const ProfileDescriptionLink = styled.a`
 
 export const InfoList = styled.ul`
   display: flex;
+  flex-direction: column;
   list-style: none;
   margin-bottom: 10px;
   margin-top: 10px;
+
+  @media ${(props) => props.theme.mediaQueries.sm} {
+    flex-direction: row;
+  }
 `;
 
 export const InfoItem = styled.li`
@@ -96,16 +102,30 @@ export const InfoItem = styled.li`
   display: flex;
   font-size: 16px;
 
-  & + li {
-    margin-left: 16px;
+  @media ${(props) => props.theme.mediaQueries.sm} {
+    flex-direction: row;
+
+    & + li {
+      margin-left: 16px;
+    }
   }
 `;
 
-export const LocationIcon = styled(LocationOn)`
+export const LocationIcon = styled(Icon).attrs({
+  name: 'location',
+})`
   ${iconStyle}
 `;
 
-export const CakeIcon = styled(Cake)`
+export const BalloonIcon = styled(Icon).attrs({
+  name: 'balloon',
+})`
+  ${iconStyle}
+`;
+
+export const CalendarIcon = styled(Icon).attrs({
+  name: 'calendar',
+})`
   ${iconStyle}
 `;
 

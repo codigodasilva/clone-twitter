@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Icon from '../icon';
+
 import Tweet from '../tweet';
 
 import {
@@ -18,7 +20,7 @@ const FeedProfile: React.FC = () => {
           <TabTitle className="active">Tweets</TabTitle>
           <TweetsWrapper>
             <Tweet />
-            <Tweet />
+            {/* <Tweet /> */}
             {/* <Tweet /> */}
             {/* <Tweet /> */}
           </TweetsWrapper>
