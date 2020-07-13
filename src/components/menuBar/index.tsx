@@ -3,6 +3,7 @@ import React from 'react';
 import {
   MenuBarContainer,
   TopSide,
+  LogoWrapper,
   TwitterLogo,
   MenuButtonWrapper,
   HomeIcon,
@@ -26,7 +27,9 @@ const MenuBar: React.FC = () => {
   return (
     <MenuBarContainer>
       <TopSide>
-        <TwitterLogo />
+        <LogoWrapper>
+          <TwitterLogo />
+        </LogoWrapper>
         <MenuButtonWrapper>
           <HomeIcon />
           <ButtonTitle>Home</ButtonTitle>

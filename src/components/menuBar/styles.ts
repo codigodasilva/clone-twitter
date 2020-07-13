@@ -51,7 +51,7 @@ export const MenuButtonWrapper = styled.button`
   cursor: pointer;
   display: flex;
   flex-shrink: 0;
-  padding: 16px 16px 16px 0;
+  padding: 10px;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.twitterDarkHover};
@@ -106,6 +106,10 @@ export const ButtonTitle = styled.span`
   }
 `;
 
+export const LogoWrapper = styled.div`
+  padding: 0 10px;
+`;
+
 export const TwitterLogo = styled(Icon).attrs({
   name: 'twitter',
 })`
@@ -151,13 +155,13 @@ export const BottomSide = styled.div`
   margin-top: 20px;
   padding: 10px;
 
-  @media ${(props) => props.theme.mediaQueries.lg} {
-    align-items: center;
-  }
-
   &:hover {
     background-color: ${(props) => props.theme.colors.twitterDarkHover};
     border-radius: 50px;
+  }
+
+  @media ${(props) => props.theme.mediaQueries.lg} {
+    align-items: center;
   }
 `;
 
