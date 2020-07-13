@@ -5,6 +5,11 @@ export const FeedProfileContainer = styled.div`
   flex-direction: column;
 `;
 
+export const TabsTitles = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const TabsWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -19,11 +24,14 @@ export const Tab = styled.section`
 `;
 
 export const TabTitle = styled.div`
+  color: ${(props) => props.theme.colors.gray};
   border-bottom: 1px solid ${(props) => props.theme.colors.gray};
   text-align: center;
   transition: color 0.2s, background-color 0.2s;
   font-weight: bold;
   padding: 12px 20px;
+  width: 100%;
+  white-space: nowrap;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.twitterDarkHover};
