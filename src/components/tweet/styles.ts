@@ -2,45 +2,45 @@ import styled, { css } from 'styled-components';
 import Icon from '../icon';
 
 const statusStyle = css`
-  cursor: pointer;
-  transition: opacity 0.2s;
-  display: flex;
   align-items: center;
+  cursor: pointer;
+  display: flex;
   font-size: 14px;
   transition: color 0.2s;
+  transition: opacity 0.2s;
 `;
 
 const iconsStyle = css`
-  width: 18px;
-  height: 18px;
   fill: ${(props) => props.theme.colors.gray};
+  height: 18px;
   margin-right: 4px;
   transition: fill 0.2s;
+  width: 18px;
 `;
 
 export const TweetContainer = styled.section`
+  border-bottom: 1px solid ${(props) => props.theme.colors.outline};
   display: flex;
   flex-direction: column;
-  padding: 14px 16px;
-  border-bottom: 1px solid ${(props) => props.theme.colors.outline};
   max-width: 100%;
+  padding: 14px 16px;
 `;
 
 export const RetweetdMessage = styled.div`
-  display: flex;
   align-items: center;
-  font-size: 12px;
   color: ${(props) => props.theme.colors.gray};
+  display: flex;
+  font-size: 12px;
 `;
 
 export const RetweetIconMiniature = styled(Icon).attrs({
   name: 'retweet',
 })`
-  width: 16px;
+  fill: ${(props) => props.theme.colors.gray};
   height: 16px;
   margin-left: 36px;
   margin-right: 8px;
-  fill: ${(props) => props.theme.colors.gray};
+  width: 16px;
 `;
 
 export const TweetBody = styled.section`
@@ -50,51 +50,51 @@ export const TweetBody = styled.section`
 `;
 
 export const Avatar = styled.img`
-  width: 48px;
-  height: 48px;
+  background-color: ${(props) => props.theme.colors.gray};
   border-radius: 50%;
   flex-shrink: 0;
-  background-color: ${(props) => props.theme.colors.gray};
+  height: 48px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 48px;
 `;
 
 export const TweetContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-top: 2px;
   padding-left: 60px;
+  width: 100%;
 `;
 
 export const ContentHeader = styled.div`
-  display: flex;
   align-items: center;
+  display: flex;
   font-size: 16px;
   white-space: nowrap;
 `;
 
 export const ProfileName = styled.strong`
   margin-right: 4px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 export const ProfileUsername = styled.span`
   color: ${(props) => props.theme.colors.gray};
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 export const Dot = styled.div`
   background-color: ${(props) => props.theme.colors.gray};
-  width: 2px;
+  border-radius: 50%;
   height: 2px;
   margin: 0 10px;
-  border-radius: 50%;
+  width: 2px;
 `;
 
 export const TweetDate = styled.time`
@@ -107,13 +107,13 @@ export const ProfileDescription = styled.p`
 `;
 
 export const ContentImage = styled.div`
-  margin-top: 12px;
-  width: 100%;
-  height: min(285px, max(175px, 41vw));
   background-color: ${(props) => props.theme.colors.outline};
   border-radius: 14px;
   cursor: pointer;
+  height: min(285px, max(175px, 41vw));
+  margin-top: 12px;
   transition: opacity 0.2s;
+  width: 100%;
 
   &:hover {
     opacity: 0.7;
@@ -121,10 +121,10 @@ export const ContentImage = styled.div`
 `;
 
 export const IconsWrapper = styled.div`
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 12px auto 0;
   width: 100%;
 `;

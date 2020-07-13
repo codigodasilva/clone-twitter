@@ -18,6 +18,7 @@ const iconStyle = css`
 export const FeedContainer = styled.main`
   display: flex;
   flex-direction: column;
+  padding-bottom: 3vh;
   width: min(601px, 100%);
 
   @media ${(props) => props.theme.mediaQueries.sm} {
@@ -35,7 +36,6 @@ export const ContentHeader = styled.header`
   position: sticky;
   text-align: left;
   top: 0;
-
   z-index: 2;
 `;
 

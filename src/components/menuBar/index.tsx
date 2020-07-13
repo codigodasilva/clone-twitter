@@ -11,12 +11,13 @@ import {
   NotificationsIcon,
   MessagesIcon,
   ProfileIcon,
-  BottonSide,
+  BottomSide,
   Avatar,
   ProfileData,
   ProfileUserName,
   ProfileUsername,
   MoreOptionsIcon,
+  TwitterIcon,
 } from './styles';
 
 import Button from '../button';
@@ -52,18 +53,19 @@ const MenuBar: React.FC = () => {
         </MenuButtonWrapper>
 
         <Button>
+          <TwitterIcon />
           <span>Tweet</span>
         </Button>
       </TopSide>
 
-      <BottonSide>
+      <BottomSide>
         <Avatar />
         <ProfileData>
           <ProfileUserName>Diego Ramos</ProfileUserName>
           <ProfileUsername>@diegocoderamos</ProfileUsername>
         </ProfileData>
         <MoreOptionsIcon />
-      </BottonSide>
+      </BottomSide>
     </MenuBarContainer>
   );
 };

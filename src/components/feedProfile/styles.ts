@@ -24,14 +24,14 @@ export const Tab = styled.section`
 `;
 
 export const TabTitle = styled.div`
-  color: ${(props) => props.theme.colors.gray};
   border-bottom: 1px solid ${(props) => props.theme.colors.gray};
-  text-align: center;
-  transition: color 0.2s, background-color 0.2s;
+  color: ${(props) => props.theme.colors.gray};
   font-weight: bold;
   padding: 12px 20px;
-  width: 100%;
+  text-align: center;
+  transition: color 0.2s, background-color 0.2s;
   white-space: nowrap;
+  width: 100%;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.twitterDarkHover};

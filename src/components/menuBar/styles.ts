@@ -4,10 +4,10 @@ import Icon from '../icon';
 import { coderamos } from '../../assets';
 
 const iconStyle = css`
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
   fill: ${(props) => props.theme.colors.white};
+  flex-shrink: 0;
+  height: 30px;
+  width: 30px;
 `;
 
 const pictureStyle = css`
@@ -26,20 +26,19 @@ export const MenuBarContainer = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
     left: 0;
-    padding: 8px 20px 20px;
-
     max-height: 100vh;
     overflow-y: scroll;
+    padding: 8px 20px 20px;
+    position: sticky;
+    top: 0;
   }
 `;
 
 export const TopSide = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media ${(props) => props.theme.mediaQueries.lg} {
     align-items: flex-start;
@@ -47,12 +46,12 @@ export const TopSide = styled.div`
 `;
 
 export const MenuButtonWrapper = styled.button`
-  display: flex;
   align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
   flex-shrink: 0;
   padding: 16px;
-  cursor: pointer;
-  border-radius: 40px;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.twitterDarkHover};
@@ -72,19 +71,22 @@ export const MenuButtonWrapper = styled.button`
   }
 
   & + button:last-child {
-    margin-top: 32px;
-    width: 40px;
-    height: 40px;
+    align-items: center;
     border-radius: 50%;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    margin-top: 32px;
+    width: 48px;
 
     > span {
       display: none;
     }
 
     @media ${(props) => props.theme.mediaQueries.lg} {
-      width: 100%;
       border-radius: 30px;
       height: unset;
+      width: 100%;
 
       > span {
         display: inline;
@@ -95,11 +97,12 @@ export const MenuButtonWrapper = styled.button`
 
 export const ButtonTitle = styled.span`
   display: none;
+
   @media ${(props) => props.theme.mediaQueries.lg} {
     display: inline;
-    margin-left: 20px;
-    font-weight: bold;
     font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
   }
 `;
 
@@ -107,9 +110,9 @@ export const TwitterLogo = styled(Icon).attrs({
   name: 'twitter',
 })`
   fill: ${(props) => props.theme.colors.twitter};
-  width: 42px;
   height: 42px;
   margin-bottom: 20px;
+  width: 42px;
 `;
 
 export const HomeIcon = styled(Icon).attrs({
@@ -142,18 +145,28 @@ export const ProfileIcon = styled(Icon).attrs({
   ${iconStyle}
 `;
 
-export const BottonSide = styled.div`
-  margin-top: 20px;
-  display: flex;
+export const BottomSide = styled.div`
   align-items: center;
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+
+  @media ${(props) => props.theme.mediaQueries.lg} {
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.twitterDarkHover};
+    border-radius: 50px;
+  }
 `;
 
 export const Avatar = styled.div`
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 50%;
   background-color: ${(props) => props.theme.colors.gray};
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 40px;
+  width: 40px;
 
   ${pictureStyle};
 `;
@@ -164,8 +177,8 @@ export const ProfileData = styled.div`
   @media ${(props) => props.theme.mediaQueries.lg} {
     display: flex;
     flex-direction: column;
-    margin-left: 8px;
     font-size: 14px;
+    margin-left: 8px;
   }
 `;
 
@@ -178,7 +191,26 @@ export const ProfileUsername = styled.span`
 export const MoreOptionsIcon = styled(Icon).attrs({
   name: 'arrowDown',
 })`
-  fill: ${(props) => props.theme.colors.gray};
-  width: 18px;
-  height: 18px;
+  display: none;
+  fill: ${(props) => props.theme.colors.white};
+
+  @media ${(props) => props.theme.mediaQueries.lg} {
+    display: inline-block;
+    font-size: 14px;
+    height: 25px;
+    margin-left: 30px;
+    width: 25px;
+  }
+`;
+
+export const TwitterIcon = styled(Icon).attrs({
+  name: 'newTweet',
+})`
+  fill: ${(props) => props.theme.colors.white};
+  height: 22px;
+  width: 22px;
+
+  @media ${(props) => props.theme.mediaQueries.lg} {
+    display: none;
+  }
 `;
