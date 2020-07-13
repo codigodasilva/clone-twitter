@@ -1,11 +1,5 @@
 import styled, { css } from 'styled-components';
-import { obama } from '../../assets';
 import Icon from '../icon';
-
-const pictureStyle = css`
-  background: url(${obama}) no-repeat center;
-  background-size: max(45px, min(45px, 22vw)) max(45px, min(45px, 22vw));
-`;
 
 const statusStyle = css`
   cursor: pointer;
@@ -55,19 +49,15 @@ export const TweetBody = styled.section`
   position: relative;
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
   width: 48px;
   height: 48px;
   border-radius: 50%;
-
   flex-shrink: 0;
   background-color: ${(props) => props.theme.colors.gray};
-
   position: absolute;
   top: 0;
   left: 0;
-
-  ${pictureStyle}
 `;
 
 export const TweetContent = styled.div`

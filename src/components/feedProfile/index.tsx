@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Tweet from '../tweet';
+import { feedProfileData } from './feedProfileData';
 
 import {
   FeedProfileContainer,
@@ -46,7 +47,19 @@ const FeedProfile: React.FC = () => {
         <Tab>
           {activeTab === 'tweets' && (
             <TweetsWrapper>
-              <Tweet />
+              {feedProfileData.map((tweet) => (
+                <Tweet
+                  key={tweet.id}
+                  authorImage={tweet.authorImage}
+                  authorName={tweet.authorName}
+                  authorUsername={tweet.authorUsername}
+                  date={tweet.date}
+                  message={tweet.message}
+                  comments={tweet.comments}
+                  retweets={tweet.retweets}
+                  likes={tweet.likes}
+                />
+              ))}
             </TweetsWrapper>
           )}
         </Tab>

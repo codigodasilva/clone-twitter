@@ -24,7 +24,27 @@ import {
   OptionsIcon,
 } from './styles';
 
-const Tweet: React.FC = () => {
+interface TweetProps {
+  authorImage?: string;
+  authorName: string;
+  authorUsername: string;
+  date: string;
+  message: string;
+  comments: string;
+  retweets: string;
+  likes: string;
+}
+
+const Tweet: React.FC<TweetProps> = ({
+  authorImage,
+  authorName,
+  authorUsername,
+  date,
+  message,
+  comments,
+  retweets,
+  likes,
+}) => {
   return (
     <TweetContainer>
       <RetweetdMessage>
@@ -32,34 +52,31 @@ const Tweet: React.FC = () => {
         You Retweeted
       </RetweetdMessage>
       <TweetBody>
-        <Avatar />
+        <Avatar src={authorImage} alt={authorName} />
         <TweetContent>
           <ContentHeader>
-            <ProfileName>Barack Obama</ProfileName>
-            <ProfileUsername>@BarackObama</ProfileUsername>
+            <ProfileName>{authorName}</ProfileName>
+            <ProfileUsername>{authorUsername}</ProfileUsername>
             <Dot />
-            <TweetDate>Jun 1</TweetDate>
+            <TweetDate>{date}</TweetDate>
           </ContentHeader>
-          <ProfileDescription>
-            I wrote out some thoughts on how to make this moment a real turning
-            point to bring about real change––and pulled together some resources
-            to help young activists sustain the momentum by channeling their
-            energy into concrete action.
-          </ProfileDescription>
+          <ProfileDescription>{message}</ProfileDescription>
           <ContentImage />
 
           <IconsWrapper>
             <CommentStatus>
-              <CommentIcon />1
+              <CommentIcon />
+              {comments}
             </CommentStatus>
 
             <RetweetStatus>
-              <RetweetIcon />8
+              <RetweetIcon />
+              {retweets}
             </RetweetStatus>
 
             <LikeStatus>
               <LikeIcon />
-              25
+              {likes}
             </LikeStatus>
             <OptionsIcon />
           </IconsWrapper>
