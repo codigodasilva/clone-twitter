@@ -51,7 +51,7 @@ export const MenuButtonWrapper = styled.button`
   cursor: pointer;
   display: flex;
   flex-shrink: 0;
-  padding: 16px;
+  padding: 16px 16px 16px 0;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.twitterDarkHover};

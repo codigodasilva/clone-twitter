@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Feed from '../feed';
-
-import { LayoutContainer, ContentWrapper, SideBar } from './styles';
-
 import MenuBar from '../menuBar';
+import SideBar from '../sideBar';
+
+import { LayoutContainer, ContentWrapper } from './styles';
 
 const Layout: React.FC = () => {
   return (
