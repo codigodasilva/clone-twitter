@@ -203,7 +203,7 @@ export const MoreOptionsIcon = styled(Icon).attrs({
   }
 `;
 
-export const TwitterIcon = styled(Icon).attrs({
+export const NewTweetIcon = styled(Icon).attrs({
   name: 'newTweet',
 })`
   fill: ${(props) => props.theme.colors.white};

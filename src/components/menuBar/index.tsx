@@ -17,7 +17,7 @@ import {
   ProfileUserName,
   ProfileUsername,
   MoreOptionsIcon,
-  TwitterIcon,
+  NewTweetIcon,
 } from './styles';
 
 import Button from '../button';
@@ -53,7 +53,7 @@ const MenuBar: React.FC = () => {
         </MenuButtonWrapper>
 
         <Button>
-          <TwitterIcon />
+          <NewTweetIcon />
           <span>Tweet</span>
         </Button>
       </TopSide>
