@@ -22,7 +22,7 @@ export const fontStyles = {
 
 export const grid = {
   breakpoints: {
-    xs: 321,
+    xs: 331,
     sm: 501,
     md: 1001,
     lg: 1281,

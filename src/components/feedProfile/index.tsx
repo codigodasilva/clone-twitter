@@ -18,9 +18,6 @@ const FeedProfile: React.FC = () => {
           <TabTitle className="active">Tweets</TabTitle>
           <TweetsWrapper>
             <Tweet />
-            {/* <Tweet /> */}
-            {/* <Tweet /> */}
-            {/* <Tweet /> */}
           </TweetsWrapper>
         </Tab>
         {/* <Tab>Tweets & Replies</Tab> */}

@@ -26,7 +26,7 @@ const Feed: React.FC = () => {
         </ButtonWrapper>
         <ProfileInfo>
           <ProfileName>Diego Ramos</ProfileName>
-          <TwitsAmount>127 tweets</TwitsAmount>
+          <TwitsAmount>127 Tweets</TwitsAmount>
         </ProfileInfo>
       </ContentHeader>
 

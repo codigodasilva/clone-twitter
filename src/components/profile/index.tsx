@@ -30,7 +30,7 @@ const Profile: React.FC = () => {
       </BannerWrapper>
 
       <ProfileData>
-        <ButtonEdit outlined>edit profile</ButtonEdit>
+        <ButtonEdit outlined>Edit profile</ButtonEdit>
         <ProfileName>Diego Ramos</ProfileName>
         <ProfileUsername>@diegocoderamos</ProfileUsername>
         <ProfileDescription>
@@ -48,20 +48,20 @@ const Profile: React.FC = () => {
 
           <InfoItem>
             <BalloonIcon />
-            born october 8, 1990
+            Born october 8, 1990
           </InfoItem>
           <InfoItem>
             <CalendarIcon />
-            joined september 2016
+            Joined september 2016
           </InfoItem>
         </InfoList>
 
         <FollowageWrapper>
           <Following>
-            <strong>80</strong> following
+            <strong>80</strong> Following
           </Following>
           <Followers>
-            <strong>11</strong> followers
+            <strong>11</strong> Followers
           </Followers>
         </FollowageWrapper>
       </ProfileData>

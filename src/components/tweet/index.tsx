@@ -15,7 +15,9 @@ import {
   ProfileDescription,
   ContentImage,
   IconsWrapper,
+  CommentStatus,
   RetweetStatus,
+  LikeStatus,
   RetweetIcon,
   CommentIcon,
   LikeIcon,
@@ -27,33 +29,38 @@ const Tweet: React.FC = () => {
     <TweetContainer>
       <RetweetdMessage>
         <RetweetIconMiniature />
-        you retweeted
+        You Retweeted
       </RetweetdMessage>
       <TweetBody>
         <Avatar />
         <TweetContent>
           <ContentHeader>
-            <ProfileName>Diego Ramos</ProfileName>
-            <ProfileUsername>@diegocoderamos</ProfileUsername>
+            <ProfileName>Barack Obama</ProfileName>
+            <ProfileUsername>@BarackObama</ProfileUsername>
             <Dot />
-            <TweetDate>July 12</TweetDate>
+            <TweetDate>Jun 1</TweetDate>
           </ContentHeader>
-          <ProfileDescription>developer at codebot</ProfileDescription>
+          <ProfileDescription>
+            I wrote out some thoughts on how to make this moment a real turning
+            point to bring about real change––and pulled together some resources
+            to help young activists sustain the momentum by channeling their
+            energy into concrete action.
+          </ProfileDescription>
           <ContentImage />
 
           <IconsWrapper>
-            <RetweetStatus>
+            <CommentStatus>
               <CommentIcon />1
-            </RetweetStatus>
+            </CommentStatus>
 
             <RetweetStatus>
               <RetweetIcon />8
             </RetweetStatus>
 
-            <RetweetStatus>
+            <LikeStatus>
               <LikeIcon />
               25
-            </RetweetStatus>
+            </LikeStatus>
             <OptionsIcon />
           </IconsWrapper>
         </TweetContent>

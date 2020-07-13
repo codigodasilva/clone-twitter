@@ -35,6 +35,8 @@ export const ContentHeader = styled.header`
   position: sticky;
   text-align: left;
   top: 0;
+
+  z-index: 2;
 `;
 
 export const ButtonWrapper = styled.button`

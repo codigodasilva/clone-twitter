@@ -101,6 +101,7 @@ export const InfoItem = styled.li`
   color: ${(props) => props.theme.colors.gray};
   display: flex;
   font-size: 16px;
+  white-space: nowrap;
 
   @media ${(props) => props.theme.mediaQueries.sm} {
     flex-direction: row;
