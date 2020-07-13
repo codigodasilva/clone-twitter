@@ -1,5 +1,9 @@
 import React from 'react';
 
+import StickyBox from 'react-sticky-box';
+
+import { sideBarData } from './sideBarData';
+
 import {
   SideBarContainer,
   SearchBarWrapper,
@@ -9,6 +13,7 @@ import {
 } from './styles';
 
 import SideBarList from '../sideBarList';
+import News from '../news';
 import FollowSuggestion from '../followSuggestion';
 
 const SideBar: React.FC = () => {
@@ -19,24 +24,29 @@ const SideBar: React.FC = () => {
         <SearchIcon />
       </SearchBarWrapper>
 
-      <SideBarWrapper>
-        <SideBarList
-          title="What's happening"
-          elements={[<h3>teste</h3>, <h3>teste</h3>, <h3>teste</h3>]}
-        />
-
-        <SideBarList
-          title="Who to floow"
-          elements={[
-            <FollowSuggestion name="Fernando Daciuk" username="@fdaciuk" />,
-            <FollowSuggestion name="Felipe Fialho" username="@felipefialho_" />,
-            <FollowSuggestion
-              name="Willian Justen"
-              username="@Willian_justen"
-            />,
-          ]}
-        />
-      </SideBarWrapper>
+      <StickyBox>
+        <SideBarWrapper>
+          <SideBarList
+            title="What's happening"
+            elements={[
+              <News topic="Trending in Brazil" title="COVID-19" />,
+              <News topic="Cinema" title="Matrix 4" />,
+              <News topic="Entertainment" title="PlayStation 5" />,
+            ]}
+          />
+          <SideBarList
+            title="Who to floow"
+            elements={sideBarData.map((suggestion) => (
+              <FollowSuggestion
+                key={suggestion.id}
+                suggestionAvatar={suggestion.suggestionAvatar}
+                suggestionName={suggestion.suggestionName}
+                suggestionUsername={suggestion.suggestionUsername}
+              />
+            ))}
+          />
+        </SideBarWrapper>
+      </StickyBox>
     </SideBarContainer>
   );
 };

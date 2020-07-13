@@ -11,21 +11,23 @@ import {
 } from './styles';
 
 interface FollowSuggestionProps {
-  name: string;
-  username: string;
+  suggestionAvatar: string;
+  suggestionName: string;
+  suggestionUsername: string;
 }
 
 const FollowSuggestion: React.FC<FollowSuggestionProps> = ({
-  name,
-  username,
+  suggestionAvatar,
+  suggestionName,
+  suggestionUsername,
 }) => {
   return (
     <FollowSuggestionContainer>
       <FollowSuggestionWrapper>
-        <SuggestionAvatar />
+        <SuggestionAvatar src={suggestionAvatar} />
         <SuggestionInfo>
-          <SuggestionName>{name}</SuggestionName>
-          <SuggestionUsername>{username}</SuggestionUsername>
+          <SuggestionName>{suggestionName}</SuggestionName>
+          <SuggestionUsername>{suggestionUsername}</SuggestionUsername>
         </SuggestionInfo>
       </FollowSuggestionWrapper>
       <FollowButton outlined>Follow</FollowButton>

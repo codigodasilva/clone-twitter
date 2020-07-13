@@ -14,8 +14,8 @@ const SideBarList: React.FC<SideBarListProps> = ({ title, elements }) => {
         <Title>{title}</Title>
       </Item>
 
-      {elements.map((element) => (
-        <Item>{element}</Item>
+      {elements.map((element, index) => (
+        <Item key={index}>{element}</Item>
       ))}
     </SideBarListContainer>
   );

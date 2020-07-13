@@ -13,7 +13,7 @@ export const FollowSuggestionWrapper = styled.div`
   display: flex;
 `;
 
-export const SuggestionAvatar = styled.div`
+export const SuggestionAvatar = styled.img`
   background-color: ${(props) => props.theme.colors.gray};
   border-radius: 50%;
   height: 48px;

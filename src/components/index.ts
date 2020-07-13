@@ -8,6 +8,7 @@ import MenuBar from './tweet';
 import SideBar from './sideBar';
 import SideBarList from './sideBarList';
 import FollowSuggestion from './followSuggestion';
+import News from './news';
 
 export {
   Layout,
@@ -20,4 +21,5 @@ export {
   SideBar,
   SideBarList,
   FollowSuggestion,
+  News,
 };
