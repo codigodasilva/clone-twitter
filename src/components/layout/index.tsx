@@ -2,7 +2,9 @@ import React from 'react';
 
 import Feed from '../feed';
 
-import { LayoutContainer, ContentWrapper, MenuBar, SideBar } from './styles';
+import { LayoutContainer, ContentWrapper, SideBar } from './styles';
+
+import MenuBar from '../menuBar';
 
 const Layout: React.FC = () => {
   return (

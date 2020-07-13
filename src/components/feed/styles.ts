@@ -83,7 +83,7 @@ export const BottomMenu = styled.nav`
   position: fixed;
   width: 100%;
 
-  @media ${(props) => props.theme.mediaQueries.sm} {
+  @media ${(props) => props.theme.mediaQueries.md} {
     display: none;
   }
 `;

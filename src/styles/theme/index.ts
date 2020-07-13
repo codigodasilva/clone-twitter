@@ -24,8 +24,9 @@ export const grid = {
   breakpoints: {
     xs: 331,
     sm: 501,
-    md: 1001,
-    lg: 1281,
+    md: 601,
+    lg: 1001,
+    xl: 1281,
   },
 };
 
@@ -34,6 +35,7 @@ export const mediaQueries = {
   sm: `(min-width: ${grid.breakpoints.sm}px)`,
   md: `(min-width: ${grid.breakpoints.md}px)`,
   lg: `(min-width: ${grid.breakpoints.lg}px)`,
+  xl: `(min-width: ${grid.breakpoints.xl}px)`,
 };
 
 export default { colors, fontStyles, grid, mediaQueries };

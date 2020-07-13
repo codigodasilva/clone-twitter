@@ -12,6 +12,4 @@ export const ContentWrapper = styled.div`
   max-width: 1280px;
 `;
 
-export const MenuBar = styled.aside``;
-
 export const SideBar = styled.aside``;

@@ -9,7 +9,7 @@ export default styled.button<ButtonProps>`
     props.outlined ? 'transparent' : `${props.theme.colors.twitter}`};
   border: ${(props) =>
     props.outlined ? `1px solid ${props.theme.colors.twitter}` : 'none'};
-  border-radius: 24px;
+  border-radius: 30px;
   color: ${(props) =>
     props.outlined
       ? `${props.theme.colors.twitter}`

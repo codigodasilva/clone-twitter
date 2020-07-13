@@ -1,6 +1,7 @@
 import React from 'react';
 import { colors } from '../../styles/theme';
 
+import { ReactComponent as arrowDown } from '../../assets/twitterIcons/arrowDown.svg';
 import { ReactComponent as arrowLeft } from '../../assets/twitterIcons/arrowLeft.svg';
 import { ReactComponent as balloon } from '../../assets/twitterIcons/balloon.svg';
 import { ReactComponent as bell } from '../../assets/twitterIcons/bell.svg';
@@ -14,6 +15,9 @@ import { ReactComponent as newTweet } from '../../assets/twitterIcons/newTweet.s
 import { ReactComponent as retweet } from '../../assets/twitterIcons/retweet.svg';
 import { ReactComponent as search } from '../../assets/twitterIcons/search.svg';
 import { ReactComponent as tweetOptions } from '../../assets/twitterIcons/tweetOptions.svg';
+import { ReactComponent as twitter } from '../../assets/twitterIcons/twitter.svg';
+import { ReactComponent as hashtag } from '../../assets/twitterIcons/hashtag.svg';
+import { ReactComponent as profile } from '../../assets/twitterIcons/profile.svg';
 
 interface IconProps {
   name: keyof typeof dictionary;
@@ -24,6 +28,7 @@ interface IconProps {
 }
 
 const dictionary = {
+  arrowDown,
   arrowLeft,
   balloon,
   bell,
@@ -37,6 +42,9 @@ const dictionary = {
   retweet,
   search,
   tweetOptions,
+  twitter,
+  hashtag,
+  profile,
 };
 
 const Icon: React.FC<IconProps> = ({
