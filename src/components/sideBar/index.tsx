@@ -35,7 +35,7 @@ const SideBar: React.FC = () => {
             ]}
           />
           <SideBarList
-            title="Who to floow"
+            title="Who to follow"
             elements={sideBarData.map((suggestion) => (
               <FollowSuggestion
                 key={suggestion.id}
