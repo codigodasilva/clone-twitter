@@ -14,12 +14,6 @@ export const colors = {
   twitterLightHover: '#2C8ED6',
 };
 
-export const fontStyles = {
-  title: {
-    fontSize: 24,
-  },
-};
-
 export const grid = {
   breakpoints: {
     xs: 331,
@@ -38,4 +32,4 @@ export const mediaQueries = {
   xl: `(min-width: ${grid.breakpoints.xl}px)`,
 };
 
-export default { colors, fontStyles, grid, mediaQueries };
+export default { colors, grid, mediaQueries };

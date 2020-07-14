@@ -218,3 +218,5 @@ export const NewTweetIcon = styled(Icon).attrs({
     display: none;
   }
 `;
+
+export const ButtonText = styled.span``;

@@ -15,7 +15,7 @@ const iconStyle = css`
   }
 `;
 
-export const FeedContainer = styled.main`
+export const HeaderContainer = styled.main`
   display: flex;
   flex-direction: column;
   padding-bottom: 3vh;

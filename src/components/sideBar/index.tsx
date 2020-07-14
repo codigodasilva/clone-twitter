@@ -2,8 +2,6 @@ import React from 'react';
 
 import StickyBox from 'react-sticky-box';
 
-import { sideBarData } from './sideBarData';
-
 import {
   SideBarContainer,
   SearchBarWrapper,
@@ -12,9 +10,11 @@ import {
   SideBarWrapper,
 } from './styles';
 
-import SideBarList from '../sideBarList';
-import News from '../news';
 import FollowSuggestion from '../followSuggestion';
+import News from '../news';
+import SideBarList from '../sideBarList';
+
+import { sideBarData } from './sideBarData';
 
 const SideBar: React.FC = () => {
   return (

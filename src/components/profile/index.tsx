@@ -1,7 +1,5 @@
 import React from 'react';
 
-import FeedProfile from '../feedProfile';
-
 import {
   ProfileContainer,
   BannerWrapper,
@@ -19,8 +17,11 @@ import {
   CalendarIcon,
   FollowageWrapper,
   Following,
+  AmountInfo,
   Followers,
 } from './styles';
+
+import FeedProfile from '../feedProfile';
 
 const Profile: React.FC = () => {
   return (
@@ -58,10 +59,10 @@ const Profile: React.FC = () => {
 
         <FollowageWrapper>
           <Following>
-            <strong>80</strong> Following
+            <AmountInfo>195</AmountInfo> Following
           </Following>
           <Followers>
-            <strong>11</strong> Followers
+            <AmountInfo>936</AmountInfo> Followers
           </Followers>
         </FollowageWrapper>
       </ProfileData>

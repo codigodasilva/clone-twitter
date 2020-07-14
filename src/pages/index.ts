@@ -1,4 +1,3 @@
-// import ExamplePage from './examplePage';
-import Home from './home';
+import Profile from './profile';
 
-export { Home };
+export { Profile };

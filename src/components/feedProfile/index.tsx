@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-import Tweet from '../tweet';
-import { feedProfileData } from './feedProfileData';
-
 import {
   FeedProfileContainer,
   TabsTitles,
@@ -11,6 +8,9 @@ import {
   TabTitle,
   TweetsWrapper,
 } from './styles';
+
+import Tweet from '../tweet';
+import { feedProfileData } from './feedProfileData';
 
 const FeedProfile: React.FC = () => {
   const [activeTab, setActiveTab] = useState('tweets');

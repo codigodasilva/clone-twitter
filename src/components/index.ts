@@ -1,25 +1,25 @@
-import Layout from './layout';
-import Feed from './feed';
-import Profile from './profile';
 import Button from './button';
+import Header from './header';
 import FeedProfile from './feedProfile';
-import Tweet from './tweet';
+import FollowSuggestion from './followSuggestion';
+import Layout from './layout';
 import MenuBar from './tweet';
+import News from './news';
+import Profile from './profile';
 import SideBar from './sideBar';
 import SideBarList from './sideBarList';
-import FollowSuggestion from './followSuggestion';
-import News from './news';
+import Tweet from './tweet';
 
 export {
-  Layout,
-  Feed,
-  Profile,
   Button,
+  Header,
   FeedProfile,
-  Tweet,
+  FollowSuggestion,
+  Layout,
   MenuBar,
+  News,
+  Profile,
   SideBar,
   SideBarList,
-  FollowSuggestion,
-  News,
+  Tweet,
 };

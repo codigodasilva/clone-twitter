@@ -6,8 +6,8 @@ export const NewsContainer = styled.div`
 `;
 
 export const Topic = styled.span`
-  font-size: 12px;
   color: ${(props) => props.theme.colors.gray};
+  font-size: 12px;
   margin-bottom: 4px;
 `;
 

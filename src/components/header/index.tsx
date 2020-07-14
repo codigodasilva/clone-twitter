@@ -3,7 +3,7 @@ import React from 'react';
 import Profile from '../profile';
 
 import {
-  FeedContainer,
+  HeaderContainer,
   ContentHeader,
   ButtonWrapper,
   BackButtonIcon,
@@ -17,16 +17,16 @@ import {
   EmailIcon,
 } from './styles';
 
-const Feed: React.FC = () => {
+const Header: React.FC = () => {
   return (
-    <FeedContainer>
+    <HeaderContainer>
       <ContentHeader>
         <ButtonWrapper>
           <BackButtonIcon />
         </ButtonWrapper>
         <ProfileInfo>
           <ProfileName>Diego Ramos</ProfileName>
-          <TwitsAmount>127 Tweets</TwitsAmount>
+          <TwitsAmount>175 Tweets</TwitsAmount>
         </ProfileInfo>
       </ContentHeader>
 
@@ -38,8 +38,8 @@ const Feed: React.FC = () => {
         <BellIcon />
         <EmailIcon />
       </BottomMenu>
-    </FeedContainer>
+    </HeaderContainer>
   );
 };
 
-export default Feed;
+export default Header;

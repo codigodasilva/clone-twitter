@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
-import { coderamos } from '../../assets';
-import Icon from '../icon';
 
 import Button from '../button';
+import Icon from '../icon';
+import { coderamos } from '../../assets';
 
 const iconStyle = css`
   cursor: pointer;
@@ -142,6 +142,8 @@ export const Following = styled.span`
     margin-left: 20px;
   }
 `;
+
+export const AmountInfo = styled.strong``;
 
 export const Followers = styled.span`
   color: ${(props) => props.theme.colors.gray};

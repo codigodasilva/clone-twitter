@@ -146,12 +146,11 @@ export const CommentStatus = styled.div`
 `;
 
 export const RetweetStatus = styled.div`
-  ${statusStyle}
-
   color: ${(props) => props.theme.colors.retweet};
-    > svg {
-      fill: ${(props) => props.theme.colors.retweet};
-    }
+
+  > svg {
+    fill: ${(props) => props.theme.colors.retweet};
+  }
 
   &:hover {
     color: ${(props) => props.theme.colors.retweet};
@@ -159,15 +158,15 @@ export const RetweetStatus = styled.div`
       fill: ${(props) => props.theme.colors.retweet};
     }
   }
+
+  ${statusStyle}
 `;
 
 export const LikeStatus = styled.div`
-  ${statusStyle}
-
   color: ${(props) => props.theme.colors.gray};
-    > svg {
-      fill: ${(props) => props.theme.colors.gray};
-    }
+  > svg {
+    fill: ${(props) => props.theme.colors.gray};
+  }
 
   &:hover {
     color: ${(props) => props.theme.colors.like};
@@ -175,6 +174,8 @@ export const LikeStatus = styled.div`
       fill: ${(props) => props.theme.colors.like};
     }
   }
+
+  ${statusStyle}
 `;
 
 export const CommentIcon = styled(Icon).attrs({
@@ -198,9 +199,9 @@ export const LikeIcon = styled(Icon).attrs({
 export const OptionsIcon = styled(Icon).attrs({
   name: 'tweetOptions',
 })`
-  ${iconsStyle};
-
   &:hover {
     fill: ${(props) => props.theme.colors.twitter};
   }
+
+  ${iconsStyle};
 `;

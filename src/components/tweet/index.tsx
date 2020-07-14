@@ -28,11 +28,11 @@ interface TweetProps {
   authorImage?: string;
   authorName: string;
   authorUsername: string;
-  date: string;
-  message: string;
   comments: string;
-  retweets: string;
+  date: string;
   likes: string;
+  message: string;
+  retweets: string;
 }
 
 const Tweet: React.FC<TweetProps> = ({
